@@ -178,6 +178,11 @@ h2 {
   margin-top: 8px;
 }
 .sec_week .state_week {
+  position: sticky;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
   padding: 0 16px;
   background: #202227;
   border-bottom: 1px solid #30333b;

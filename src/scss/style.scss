@@ -87,7 +87,7 @@ h2 {
 .sec_week {
     margin-top:8px;
     .state_week {
-        padding:0 16px;background:#202227;border-bottom:1px solid #30333b;
+        position:sticky;left:0;top:0;width:100%;z-index:1;padding:0 16px;background:#202227;border-bottom:1px solid #30333b;
         .tab_week {
             display:flex;justify-content:space-between;align-items:center;padding:11px 0;
             li {
@@ -269,6 +269,5 @@ h2 {
                 }
             }
         }
-    }
-   
+    }   
 }
