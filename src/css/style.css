@@ -196,8 +196,10 @@ h2 {
 .sec_week .state_week .tab_week li {
   width: 14.2857142857%;
 }
-.sec_week .state_week .tab_week li button {
-  display: block;
+.sec_week .state_week .tab_week li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 55px;
   border-radius: 10px;
@@ -207,16 +209,16 @@ h2 {
   text-align: center;
   color: #a7acb9;
 }
-.sec_week .state_week .tab_week li button strong {
+.sec_week .state_week .tab_week li a strong {
   font-weight: normal;
 }
-.sec_week .state_week .tab_week li button strong .num {
+.sec_week .state_week .tab_week li a strong .num {
   display: block;
   margin-top: 8px;
   font-weight: 400;
   font-size: 15px;
 }
-.sec_week .state_week .tab_week li.on button {
+.sec_week .state_week .tab_week li a.active {
   background: #fff;
   color: #24272d;
 }
