@@ -65,7 +65,8 @@ h2 {
   height: 16px;
   vertical-align: top;
   margin: 1px 0 0 4px;
-  background: pink;
+  background: url(../../public/img/btn_right.png) no-repeat 0 0;
+  background-size: 16px auto;
 }
 .sec_secret .swiper_secret {
   padding: 16px 16px 26px 16px;
@@ -128,6 +129,12 @@ h2 {
   width: 32px;
   height: 32px;
   border: 1px solid #f9fafb;
+  border-radius: 50%;
+}
+.sec_secret .swiper_secret .swiper-slide .info .profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 50%;
 }
 .sec_secret .swiper_secret .swiper-slide .info .profile::after {
@@ -227,19 +234,18 @@ h2 {
 .sec_week .list_week li .box_week {
   position: relative;
   margin-top: 12px;
-  border-radius: 10px;
-  overflow: hidden;
 }
 .sec_week .list_week li .box_week .area_tit {
   position: relative;
   padding: 44px 18px 16px;
   background: #30333b;
   border: 1px solid rgba(69, 74, 84, 0.5);
+  border-radius: 10px;
 }
 .sec_week .list_week li .box_week .area_tit .area_label {
   position: absolute;
   left: 18px;
-  top: -1px;
+  top: -2px;
 }
 .sec_week .list_week li .box_week .area_tit .area_label em {
   display: inline-block;
@@ -284,7 +290,7 @@ h2 {
   font-size: 20px;
   line-height: 24px;
   color: #f9fafb;
-  vertical-align: middle;
+  vertical-align: top;
   margin-right: 6px;
 }
 .sec_week .list_week li .box_week .area_tit .tit_week .txt {
@@ -295,7 +301,7 @@ h2 {
   font-size: 12px;
   line-height: 14px;
   color: #888e9a;
-  vertical-align: middle;
+  vertical-align: top;
 }
 .sec_week .list_week li .box_week .area_tit .offering {
   display: inline-block;
@@ -367,6 +373,8 @@ h2 {
   display: none;
   padding: 16px 18px 18px;
   background: #202227;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 .sec_week .list_week li .box_week .area_cont .list_cont li {
   overflow: hidden;
@@ -405,13 +413,21 @@ h2 {
 .sec_week .list_week li .box_week .btn_detail {
   position: absolute;
   right: 14px;
-  top: 14px;
+  top: 11px;
   width: 16px;
   height: 16px;
-  background: pink;
+  background-image: url(../../public/img/btn_open.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 16px auto;
+}
+.sec_week .list_week li .box_week.open .area_tit {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 .sec_week .list_week li .box_week.open .area_tit .tit_week {
   display: block;
+  flex-direction: unset;
 }
 .sec_week .list_week li .box_week.open .area_tit .tit_week .tit {
   display: inline;
@@ -420,14 +436,13 @@ h2 {
   text-overflow: unset;
 }
 .sec_week .list_week li .box_week.open .area_tit .tit_week .txt {
-  display: inline;
   white-space: unset;
 }
 .sec_week .list_week li .box_week.open .area_cont {
   display: block;
 }
 .sec_week .list_week li .box_week.open .btn_detail {
-  background: red;
+  background-image: url(../../public/img/btn_closed.png);
 }
 .sec_week .list_week li.on .tit_date {
   border: 1px solid rgba(237, 239, 242, 0.5);

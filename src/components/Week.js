@@ -1,4 +1,8 @@
 export default function Week() {
+
+     const boxOpen = e => {
+        e.currentTarget.parentElement.classList.toggle('open');
+      };
  
     return (
         <>
@@ -92,13 +96,13 @@ export default function Week() {
                                     </li>
                                 </ul>
                             </div>
-                            <button type="button" className="btn_detail"><span class="hidden">자세히 보기</span></button>
+                            <button type="button" className="btn_detail" onClick={boxOpen}><span class="hidden">자세히 보기</span></button>
                         </div>
                     </li>
 
                     <li>
                         <strong className="tit_date">화 5.17</strong>
-                        <div className="box_week open">
+                        <div className="box_week">
                             <div className="area_tit">
                                 <div className="area_label">
                                     <em className="performanc">실적</em>
@@ -124,9 +128,9 @@ export default function Week() {
                                     </li>
                                 </ul>
                             </div>
-                            <button type="button" className="btn_detail"><span class="hidden">자세히 보기</span></button>
+                            <button type="button" className="btn_detail" onClick={boxOpen}><span class="hidden">자세히 보기</span></button>
                         </div>
-                        <div className="box_week open">
+                        <div className="box_week">
                             <div className="area_tit">
                                 <div className="area_label">
                                     <em className="event">이벤트</em>
@@ -141,13 +145,13 @@ export default function Week() {
                                     <p className="desc">픽셀워치는 구글과 삼성이 공동 개발한 웨어러블용 운용체계(OS) '웨어OS'로 구동되며, 자체 개발한 시스템온칩(Soc)를 탑재할 것으로 알려짐</p>
                                 </div>
                             </div>
-                            <button type="button" className="btn_detail"><span class="hidden">자세히 보기</span></button>
+                            <button type="button" className="btn_detail" onClick={boxOpen}><span class="hidden">자세히 보기</span></button>
                         </div>
                     </li>
 
                     <li>
                         <strong className="tit_date">수 5.18</strong>
-                        <div className="box_week open">
+                        <div className="box_week">
                             <div className="area_tit">
                                 <div className="area_label">
                                     <em className="ipo">IPO</em>
@@ -178,13 +182,13 @@ export default function Week() {
                                     </li>
                                 </ul>
                             </div>
-                            <button type="button" className="btn_detail"><span class="hidden">자세히 보기</span></button>
+                            <button type="button" className="btn_detail" onClick={boxOpen}><span class="hidden">자세히 보기</span></button>
                         </div>
                     </li>
 
                     <li>
                         <strong className="tit_date">목 5.19</strong>
-                        <div className="box_week open">
+                        <div className="box_week">
                             <div className="area_tit">
                                 <div className="area_label">
                                     <em className="performanc">실적</em>
@@ -210,9 +214,9 @@ export default function Week() {
                                     </li>
                                 </ul>
                             </div>
-                            <button type="button" className="btn_detail"><span class="hidden">자세히 보기</span></button>
+                            <button type="button" className="btn_detail" onClick={boxOpen}><span class="hidden">자세히 보기</span></button>
                         </div>
-                        <div className="box_week open">
+                        <div className="box_week">
                             <div className="area_tit">
                                 <div className="area_label">
                                     <em className="ipo">IPO</em>
@@ -243,13 +247,13 @@ export default function Week() {
                                     </li>
                                 </ul>
                             </div>
-                            <button type="button" className="btn_detail"><span class="hidden">자세히 보기</span></button>
+                            <button type="button" className="btn_detail" onClick={boxOpen}><span class="hidden">자세히 보기</span></button>
                         </div>
                     </li>
 
                     <li>
                         <strong className="tit_date">금 5.20</strong>
-                        <div className="box_week open">
+                        <div className="box_week">
                             <div className="area_tit">
                                 <div className="area_label">
                                     <em className="event">이벤트</em>
@@ -264,7 +268,7 @@ export default function Week() {
                                     <p className="desc">인터배터리는 국내 유일의 배터리 전문 전시회로 올해 행사에는 국내외 270여개 배터리 산업 관련 기업들이 참가해 새로운 제품과 기술을 선보일 것으로 알려짐</p>
                                 </div>
                             </div>
-                            <button type="button" className="btn_detail"><span class="hidden">자세히 보기</span></button>
+                            <button type="button" className="btn_detail" onClick={boxOpen}><span class="hidden">자세히 보기</span></button>
                         </div>
                     </li>
                 </ol>
