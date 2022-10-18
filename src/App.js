@@ -1,6 +1,16 @@
+import './scss/style.scss';
+
+import Secret from './components/Secret';
+import Week from './components/Week';
+
 function App() {
 	return (
-		<h1>Hello</h1>
+		<>
+		
+		<Secret />
+		<Week />
+		
+		</>
 	);
 }
 
