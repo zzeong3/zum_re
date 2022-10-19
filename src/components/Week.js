@@ -66,7 +66,9 @@ export default function Week() {
 
                 <ol className="list_week">
                     <li id="Mon">
-                        <strong className="tit_date">월 5.16</strong>
+                        <Link to="Mon" spy={true} smooth={true} offset={-142} duration={500} className="tit_date">
+                            월 5.16
+                        </Link>  
                         <div className="box_week open">
                             <div className="area_tit">
                                 <div className="area_label">
@@ -131,7 +133,9 @@ export default function Week() {
                     </li>
 
                     <li id="Tue">
-                        <strong className="tit_date">화 5.17</strong>
+                        <Link to="Tue" spy={true} smooth={true} offset={-142} duration={500} className="tit_date">
+                            화 5.17
+                        </Link>  
                         <div className="box_week open">
                             <div className="area_tit">
                                 <div className="area_label">
@@ -180,7 +184,9 @@ export default function Week() {
                     </li>
 
                     <li id="Wed">
-                        <strong className="tit_date">수 5.18</strong>
+                        <Link to="Wed" spy={true} smooth={true} offset={-142} duration={500} className="tit_date">
+                            수 5.18
+                        </Link>  
                         <div className="box_week open">
                             <div className="area_tit">
                                 <div className="area_label">
@@ -217,7 +223,9 @@ export default function Week() {
                     </li>
 
                     <li id="Thur">
-                        <strong className="tit_date">목 5.19</strong>
+                        <Link to="Thur" spy={true} smooth={true} offset={-142} duration={500} className="tit_date">
+                            목 5.19
+                        </Link>  
                         <div className="box_week open">
                             <div className="area_tit">
                                 <div className="area_label">
@@ -282,7 +290,9 @@ export default function Week() {
                     </li>
 
                     <li id="Fri">
-                        <strong className="tit_date">금 5.20</strong>
+                        <Link to="Fri" spy={true} smooth={true} offset={-142} duration={500} className="tit_date">
+                            금 5.20
+                        </Link>  
                         <div className="box_week open">
                             <div className="area_tit">
                                 <div className="area_label">

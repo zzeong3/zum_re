@@ -2,7 +2,9 @@
 @import 'reset.scss';
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&display=swap');
 
-$color1:#edeff2;
+$txtColor:#edeff2;
+$bgColor1 : #30333b;
+$bgColor2 : #202227;
 
 
 body {
@@ -12,12 +14,12 @@ body {
 h2 {
     height:52px;
     border-bottom:1px solid rgb(48, 51, 59, .3);
-    font-size:18px;line-height:52px;color:$color1;letter-spacing:-.15px;
+    font-size:18px;line-height:52px;color:$txtColor;letter-spacing:-.15px;
 }
 
 .sec_secret {
     position:relative;
-    background:#202227;padding:0 16px;
+    background:$bgColor2;padding:0 16px;
     .link_more {
         position:absolute;right:15px;top:17px;
         font-size:14px;line-height:18px;color:#a7acb9;
@@ -34,7 +36,7 @@ h2 {
         margin:0 -16px;
         .swiper-slide {
             position:relative;width:161px;height:216px;
-            background:#30333b;padding:14px 14px 12px;
+            background:$bgColor1;padding:14px 14px 12px;
             border:1px solid rgba(69, 74, 84, 0.5);border-radius:10px;
             .label {
                 display:inline-block;padding:0 10px;height:22px;
@@ -71,7 +73,7 @@ h2 {
                     }
                 }
                 .name {
-                    display:block;overflow:hidden;font-size:15px;line-height:18px;color:$color1;text-overflow:ellipsis;white-space:nowrap;
+                    display:block;overflow:hidden;font-size:15px;line-height:18px;color:$txtColor;text-overflow:ellipsis;white-space:nowrap;
                 }
                 .txt {
                     display:block;overflow:hidden;font-size:13px;line-height:16px;color:#3384ff;text-overflow:ellipsis;white-space:nowrap;
@@ -87,7 +89,7 @@ h2 {
 .sec_week {
     margin-top:8px;
     .state_week {
-        position:sticky;left:0;top:0;width:100%;z-index:1;padding:0 16px;background:#202227;border-bottom:1px solid #30333b;
+        position:sticky;left:0;top:0;width:100%;z-index:1;padding:0 16px;background:$bgColor2;
         .tab_week {
             display:flex;justify-content:space-between;align-items:center;padding:11px 0;
             li {
@@ -118,13 +120,16 @@ h2 {
             .tit_date {
                 display:block;width:100px;height:24px;
                 margin:12px auto 0;
-                border-radius:50px;background:#202227;
+                border-radius:50px;background:$bgColor2;
                 font-weight:400;font-size:13px;line-height:22px;color:#c6cad2;text-align:center;
+                &.active {
+                    border:1px solid rgba(237, 239, 242, 0.5);
+                }
             }
             .box_week {
                 position:relative;margin-top:12px;
                 .area_tit {
-                    position:relative;padding:44px 18px 16px;background:#30333b;border:1px solid rgba(69, 74, 84, 0.5);border-radius:10px;
+                    position:relative;padding:44px 18px 16px;background:$bgColor1;border:1px solid rgba(69, 74, 84, 0.5);border-radius:10px;
                     .area_label {
                         position:absolute;left:18px;top:-2px;
                         em {
@@ -209,7 +214,7 @@ h2 {
                 .area_cont {
                     display:none;
                     padding:16px 18px 18px;
-                    background:#202227;
+                    background:$bgColor2;
                     border-bottom-left-radius:10px;border-bottom-right-radius:10px;
                     .list_cont {
                         li {
@@ -262,11 +267,7 @@ h2 {
                     }
                 }
             }
-            &.on {
-                .tit_date {
-                    border:1px solid rgba(237, 239, 242, 0.5);
-                }
-            }
+            
         }
     }   
 }

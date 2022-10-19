@@ -185,7 +185,6 @@ h2 {
   z-index: 1;
   padding: 0 16px;
   background: #202227;
-  border-bottom: 1px solid #30333b;
 }
 .sec_week .state_week .tab_week {
   display: flex;
@@ -237,6 +236,9 @@ h2 {
   line-height: 22px;
   color: #c6cad2;
   text-align: center;
+}
+.sec_week .list_week li .tit_date.active {
+  border: 1px solid rgba(237, 239, 242, 0.5);
 }
 .sec_week .list_week li .box_week {
   position: relative;
@@ -450,9 +452,6 @@ h2 {
 }
 .sec_week .list_week li .box_week.open .btn_detail {
   background-image: url(../../public/img/btn_closed.png);
-}
-.sec_week .list_week li.on .tit_date {
-  border: 1px solid rgba(237, 239, 242, 0.5);
 }
 
 /*# sourceMappingURL=style.css.map */
