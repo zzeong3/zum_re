@@ -11,6 +11,7 @@ ul, ol, li {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 button {
